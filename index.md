@@ -13,7 +13,7 @@ Nedan följer ett kodblock
 
 ### Länkar
 
-[Slashdot är inte vad det varit](https://slashdot.org)
-[Github](https://github.com)
-[Foo](html/foo.html)
+ * [Slashdot är inte vad det varit](https://slashdot.org)
+ * [Github](https://github.com)
+ * [Foo](html/foo.html)
 
