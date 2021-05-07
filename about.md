@@ -2,6 +2,8 @@
 [title:]: #About
 # About
 
+[Jonas](img/profil.jpg)
+
 Detta är en tom md sida. Troligen körd genom jekyll innan den servas med massor av boilerplate till din webläsare.
 
 Hej då.
