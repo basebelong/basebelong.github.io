@@ -7,8 +7,9 @@ post="$date"-"$@".md
 post_assets="$date"-"$@"
 
 git_stuff () {
-    git add "$workdir"/_post/"$post"
-    git add "$workdir"/_assets/"$post_assets"
+#    git add "$workdir"/_post/"$post"
+#    git add "$workdir"/_assets/"$post_assets"
+    git add --all
     git commit -m "Added post ${post}"
     git push origin master
 }

@@ -1,0 +1,3 @@
+# Rubrik
+
+[Back](../index.md)

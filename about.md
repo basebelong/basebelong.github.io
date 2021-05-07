@@ -2,7 +2,7 @@
 [title:]: #About
 # About
 
-![Jonas](img/profil.jpg){: width="250" }
+![Jonas](_assets/img/profil.jpg){: width="250" }
 
 Detta är en tom md sida. Troligen körd genom jekyll innan den servas med massor av boilerplate till din webläsare.
 
