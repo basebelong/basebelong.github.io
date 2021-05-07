@@ -15,7 +15,6 @@ Nedan följer ett kodblock
 
  * [Slashdot är inte vad det varit](https://slashdot.org)
  * [Github](https://github.com)
- * [Foo](html/foo.html)
-
+ * [About](about.md)
 -- Jonas Hendrikson
 
