@@ -11,11 +11,7 @@ Nedan följer ett kodblock
     #!/usr/bin/env bash
     printf "Hello World!\n"
 
-### Länkar
-
- * [Slashdot är inte vad det varit](https://slashdot.org)
- * [Github](https://github.com)
- * [About](about.md)
+### Sitekarta
 
 <ul>
     {% for post in site.posts %}
