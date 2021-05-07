@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+workdir="/home/jonas/Github/basebelong.github.io"
+
+date=$(date '+%F')
+post="$date"-"$@".md
+post_assets="$date"-"$@"
+
+git_stuff () {
+    git add "$workdir"/_post/"$post"
+    git add "$workdir"/_assets/"$post_assets"
+    git commit -m "Added post ${post}"
+    git push origin master
+}
+
+mkdir -p "$workdir"/"$post_assets"
+
+cp "$workdir"/_default_post.md "$workdir"/_posts/"$post"
+
+vim "$workdir"/_posts/"$post"
+
+read -p "Skapa posten ${post}? [Y/n] " answer
+
+while true; do
+    case $answer in
+        [nN]* ) echo "Otur för dig. Filerna ligger kvar. Ej pushat till github."
+                exit
+                ;;
+
+        [yY]* ) git_stuff
+                break
+                ;;
+
+        * )     git_stuff
+                break
+                ;;
+    esac
+done
+
+
