@@ -16,5 +16,11 @@ Nedan följer ett kodblock
  * [Slashdot är inte vad det varit](https://slashdot.org)
  * [Github](https://github.com)
  * [About](about.md)
--- Jonas Hendrikson
 
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+    {% endfor %}
+</ul>
