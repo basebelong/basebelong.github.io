@@ -1,3 +1,3 @@
 # Rubrik
 
-[Back](../../../index.md)
+[Back](../../../index.html)

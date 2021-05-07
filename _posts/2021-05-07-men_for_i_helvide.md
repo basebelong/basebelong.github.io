@@ -2,4 +2,4 @@
 
 Jag blir galen. Eller vadå? Blir?!?
 
-[Back](../../../index.md)
+[Back](../../../index.html)
