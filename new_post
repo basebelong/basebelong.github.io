@@ -14,7 +14,7 @@ git_stuff () {
     git push origin master
 }
 
-mkdir -p "$workdir"/"$post_assets"
+mkdir -p "$workdir"/_assets/"$post_assets"
 
 cp "$workdir"/_default_post.md "$workdir"/_posts/"$post"
 
