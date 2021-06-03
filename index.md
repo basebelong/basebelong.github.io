@@ -1,8 +1,8 @@
 # Hello World!
 
-## Detta är en rubrik
+## Yet Another Self Promoting Blog
 
-Då skall vi se om detta häringa github pages kan komma att bli användbart.
+Denna blog är ett pompöst och oironiskt sätt att visa närvaro på nätet. Har för avsikt att även använda detta som en saniterad form av egna anteckningar kring teknologier jag använder eller undersöker.
 
 ### Rubrik 3
 
@@ -12,6 +12,8 @@ Nedan följer ett kodblock
     printf "Hello World!\n"
 
 ### Sitekarta
+
+Poster. I datumordning. Försöker att hålla rubriken rimlig för att underlätta sökande på sidan efter intresseområde. Att 'Ctrl + F' (eller '/' om man kör något vim-plugin till sin webläsare) och skriva t.ex. 'LXD' *skall* visa relevanta artiklar.
 
 <ul>
     {% for post in site.posts %}
