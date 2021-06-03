@@ -6,7 +6,7 @@ Synd att Linux Academy just har blivit slaktat av A Cloud Guru. De hade enligt u
 
 Redovisar (inför mig själv och världen) min väg mot ett godkännt prov här nedan.
 
- 1) 2021-06-03 Beslutet är fattat! Skall klara av RHCSA innan första kvartalet 2022 är slut.
- 2) 2021-06-03 Har registrerat ett utvecklarkonto hos Red Hat och snurrat igång RHEL i en Hyper-v vm lokalt.
+  1. 2021-06-03 Beslutet är fattat! Skall klara av RHCSA innan första kvartalet 2022 är slut.
+  2. 2021-06-03 Har registrerat ett utvecklarkonto hos Red Hat och snurrat igång RHEL i en Hyper-v vm lokalt.
 
 [Back](../../../index.html)
