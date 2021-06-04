@@ -4,22 +4,27 @@
 
 Denna blog är ett pompöst och oironiskt sätt att visa närvaro på nätet. Har för avsikt att även använda detta som en saniterad form av egna anteckningar kring teknologier jag använder eller undersöker.
 
-### Rubrik 3
+### Kodsnippets
 
-Nedan följer ett kodblock
+Ignorera. Testar bara hur kod ser ut.
 
     #!/usr/bin/env bash
     printf "Hello World!\n"
 
-Även detta är ett kodblock
+En phony progress bar. Högerjusterar. Tar text till vänsterspalten som argument.
 
 ```bash
 #!/usr/bin/env bash
 
-printf "[          ]\r["
+width=$(tput cols)
+padding=$(( width - 20 ))
+message="$*"
+
+printf "%s" "$message"
+printf "\r\033[${padding}C[          ]\r\033[${padding}C["
 for i in {0..9}; do
     printf "#"
-    sleep 0.5
+    sleep 0.3
 done
 printf "] Done.\n"
 ```
