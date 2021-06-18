@@ -17,8 +17,10 @@ Min laptop har **bara** 16GB RAM så det är besvärligt att bygga upp lab-milj�
 swap på zram är konfigurerat genom systemd. Default inställningarna finns under /usr/lib/systemd/zram-generator.conf och behöver flyttas till /etc/systemd för att konfigureras där. Filen har en manualsida som finns att läsa under man(5) zram-generator.conf.
 
 Mitt första naiva test var att lägga till
-	max-zram-size = 32768
-	swap-priority = 10000
+```bash
+max-zram-size = 32768
+swap-priority = 10000
+```
 för att verkligen kunna testa extremfallet. Minns att jag bara har 16GB fysiskt minne. Du har jag altså en dubbelt så stor swap i nämnda minne. zram är komprimerat, men kräver ju att kompressionen har ett förhållande bättre än 2:1 för att swap inte skall äta upp allt minne!
 
 Det gick faktiskt att krascha systemet, eller åtminstone göra det obrukbart - genom att starta ett gäng överprovitionerade virtuella maskiner. 
@@ -26,10 +28,12 @@ Det gick faktiskt att krascha systemet, eller åtminstone göra det obrukbart - 
 En mer rimlig (men smått förbluffande) inställning är på mitt system att avsätta lika mycket till swap på zram som det finns fysiskt minne. Jag har ännu inte efter att ha använt min dator normalt under en tid stött på allvarliga problem.
 
 Använder följande inställningar på min 16GB maskin:
-	[zram0]
-	zram-fraction = 1.0
-	max-zram-size = 16384
-	swap-priority = 200
+```bash
+[zram0]
+zram-fraction = 1.0
+max-zram-size = 16384
+swap-priority = 200
+```
 
 zramctl visar användningssiffror. Under experimenterandet var det lämpligt att lämna ett terminalfönster igång med 'sudo watch -n 3 zramctl'
 
