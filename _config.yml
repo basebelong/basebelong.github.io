@@ -3,3 +3,4 @@ theme: jekyll-theme-cayman
 github:
   test_url: https://foobar.com
   test_url2:  https://altavista.com
+  test_url3:  https://slashdot.org
