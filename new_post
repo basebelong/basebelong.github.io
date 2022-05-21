@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-workdir="/home/jonas/Github/basebelong.github.io"
+workdir="/home/jonas/src/basebelong/basebelong.github.io"
 
 date=$(date '+%F')
 post="$date"-"$@".md
